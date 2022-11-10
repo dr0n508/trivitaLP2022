@@ -38,39 +38,39 @@
       -ms-flex-align: center;
           align-items: center; }
 
-.head-section .section-one {
+.head-section .block-one {
   width: 55%;
   padding-top: 20px; }
-  .head-section .section-one p {
+  .head-section .block-one p {
     font-size: 30px;
     color: #707070;
     font-weight: 500;
     line-height: 1.4; }
-  .head-section .section-one .painter-text {
+  .head-section .block-one .painter-text {
     font-size: 80px;
     padding: 20px 10px;
     line-height: 1; }
 
-.head-section .section-two {
+.head-section .block-two {
   width: 45%; }
 
-.head-section .section-three {
+.head-section .block-three {
   width: 55%;
   padding: 0 6%; }
-  .head-section .section-three img {
+  .head-section .block-three img {
     margin-bottom: 30px; }
 
-.head-section .section-four {
+.head-section .block-four {
   width: 45%;
   padding-top: 60px;
   padding-bottom: 30px; }
-  .head-section .section-four ul {
+  .head-section .block-four ul {
     display: inline-block;
     margin-bottom: 50px;
     padding-left: 22px;
     font-size: 23px;
     color: #707070; }
-    .head-section .section-four ul li {
+    .head-section .block-four ul li {
       text-align: left;
       list-style-type: disc;
       line-height: 1.5; }
@@ -100,46 +100,46 @@
     .head-section .main-title:after {
       width: 65px;
       height: 58px; }
-  .head-section .section-one p {
+  .head-section .block-one p {
     font-size: 24px; }
-  .head-section .section-one .painter-text {
+  .head-section .block-one .painter-text {
     font-size: 70px; }
-  .head-section .section-four ul {
+  .head-section .block-four ul {
     font-size: 20px; } }
 
 @media (max-width: 992px) {
-  .head-section .section-one, .head-section .section-two, .head-section .section-three, .head-section .section-four {
+  .head-section .block-one, .head-section .block-two, .head-section .block-three, .head-section .block-four {
     width: 100%; }
-  .head-section .section-one {
+  .head-section .block-one {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
-    .head-section .section-one .main-title {
+    .head-section .block-one .main-title {
       display: inline-block; }
-    .head-section .section-one p {
+    .head-section .block-one p {
       font-size: 20px; }
-  .head-section .section-two {
+  .head-section .block-two {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
     text-align: center; }
-    .head-section .section-two img {
+    .head-section .block-two img {
       max-width: 350px; }
-  .head-section .section-three {
+  .head-section .block-three {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     text-align: center; }
-    .head-section .section-three img {
+    .head-section .block-three img {
       max-width: 350px; }
-  .head-section .section-four {
+  .head-section .block-four {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4; }
-    .head-section .section-four ul {
+    .head-section .block-four ul {
       margin-bottom: 20px;
       font-size: 18px; }
-    .head-section .section-four .offer-form {
+    .head-section .block-four .offer-form {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -147,9 +147,9 @@
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      .head-section .section-four .offer-form input, .head-section .section-four .offer-form button {
+      .head-section .block-four .offer-form input, .head-section .block-four .offer-form button {
         width: 300px; }
-      .head-section .section-four .offer-form .offer-btn {
+      .head-section .block-four .offer-form .offer-btn {
         padding-top: 13px;
         padding-bottom: 13px;
         margin: 20px 0 0 0; } }
@@ -161,9 +161,9 @@
       width: 49px;
       height: 43px;
       right: 0; }
-  .head-section .section-one .painter-text {
+  .head-section .block-one .painter-text {
     font-size: 44px; }
-  .head-section .section-two img, .head-section .section-three img {
+  .head-section .block-two img, .head-section .block-three img {
     max-width: 100%; } }
 
 .free-sample-section {
@@ -207,7 +207,8 @@
       width: 42%; }
   @media (max-width: 992px) {
     .free-sample-section .col-1 {
-      width: 100%; }
+      width: 80%;
+      margin: 0 auto; }
       .free-sample-section .col-1 .accent-text {
         font-size: 24px; }
       .free-sample-section .col-1 .sample-img-mobile {
@@ -234,6 +235,9 @@
       max-width: 90px; }
     .free-sample-section .inner-wrap p {
       font-size: 18px; } }
+  @media (max-width: 600px) {
+    .free-sample-section .col-1 {
+      width: 100%; } }
 
 .review-section {
   padding: 40px 0; }
@@ -263,10 +267,17 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
       .review-section .wrap .inner-block {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
         padding: 0; }
+        .review-section .wrap .inner-block ul li {
+          font-size: 18px; }
       .review-section .wrap img {
-        width: 100%; } }
+        width: 80%;
+        margin: 0 auto; } }
+  @media (max-width: 600px) {
+    .review-section .wrap .inner-block, .review-section .wrap img {
+      width: 100%; } }
 
 .image-section {
   padding: 20px 0;
@@ -282,18 +293,21 @@
   .shipping-section img {
     max-width: 45px;
     margin-bottom: 10px; }
-  .shipping-section p {
-    font-weight: 600; }
   .shipping-section .shipping-text {
     font-size: 24px;
-    color: #0A4595; }
+    color: #0A4595;
+    font-weight: 600; }
   .shipping-section .call-text {
     font-size: 24px;
     color: #ED1C24;
+    font-weight: 600;
     margin-bottom: 30px; }
   @media (max-width: 992px) {
     .shipping-section {
       background: #F6F7F9; } }
+  @media (max-width: 600px) {
+    .shipping-section .shipping-text, .shipping-section .call-text {
+      font-size: 20px; } }
 
 * {
   margin: 0;
@@ -451,5 +465,9 @@ h2.h2 {
     text-align: center; }
   .offer-form.show-mobile {
     margin-bottom: 30px; } }
+
+@media (max-width: 600px) {
+  h2.h2 {
+    font-size: 26px; } }
 
 /*# sourceMappingURL=css/main.min.css.map */
