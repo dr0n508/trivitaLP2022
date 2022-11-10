@@ -33,7 +33,10 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .head-section .section-one {
   width: 55%;
@@ -45,6 +48,7 @@
     line-height: 1.4; }
   .head-section .section-one .painter-text {
     font-size: 80px;
+    padding: 20px 10px;
     line-height: 1; }
 
 .head-section .section-two {
@@ -74,6 +78,7 @@
 .head-section .main-title {
   position: relative;
   padding: 35px 0;
+  text-align: left;
   font-weight: bold;
   font-size: 60px;
   line-height: 1; }
@@ -88,10 +93,6 @@
     -webkit-background-size: cover;
             background-size: cover; }
 
-.head-section .painter-text {
-  font-size: 60px;
-  padding: 20px 10px; }
-
 @media (max-width: 1200px) {
   .head-section .main-title {
     padding: 10px 0 20px;
@@ -102,7 +103,9 @@
   .head-section .section-one p {
     font-size: 24px; }
   .head-section .section-one .painter-text {
-    font-size: 70px; } }
+    font-size: 70px; }
+  .head-section .section-four ul {
+    font-size: 20px; } }
 
 @media (max-width: 992px) {
   .head-section .section-one, .head-section .section-two, .head-section .section-three, .head-section .section-four {
@@ -111,6 +114,10 @@
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
+    .head-section .section-one .main-title {
+      display: inline-block; }
+    .head-section .section-one p {
+      font-size: 20px; }
   .head-section .section-two {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -130,7 +137,8 @@
         -ms-flex-order: 4;
             order: 4; }
     .head-section .section-four ul {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: 18px; }
     .head-section .section-four .offer-form {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -145,6 +153,18 @@
         padding-top: 13px;
         padding-bottom: 13px;
         margin: 20px 0 0 0; } }
+
+@media (max-width: 600px) {
+  .head-section .main-title {
+    font-size: 30px; }
+    .head-section .main-title:after {
+      width: 49px;
+      height: 43px;
+      right: 0; }
+  .head-section .section-one .painter-text {
+    font-size: 44px; }
+  .head-section .section-two img, .head-section .section-three img {
+    max-width: 100%; } }
 
 .free-sample-section {
   background-color: #F6F7F9;
@@ -421,6 +441,8 @@ h2.h2 {
   display: flex; }
 
 @media (max-width: 992px) {
+  h2.h2 {
+    font-size: 32px; }
   .show-mobile {
     display: block; }
   .hide-mobile {
